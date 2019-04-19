@@ -139,7 +139,7 @@ table {
 .tabs .tabs-item {
   opacity: 0;
   position: absolute;
-  left: -500px;
+  left: -800px;
   transition: 0.5s;
   width: 75%;
   display: flex;
@@ -166,8 +166,9 @@ table {
 }
 .tabs .tabs-item-selected {
   position: absolute;
-  width: 1200px;
-  left: 650px;
+  margin: 0 auto;
+  width: 30%;
+  left: auto;
   opacity: 1;
   transition: 0.5s;
 }
@@ -203,6 +204,7 @@ header {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+  background-color: none;
 }
 header nav {
   display: flex;
@@ -213,10 +215,17 @@ header nav {
   margin-bottom: 1rem;
 }
 header nav a {
-  color: #9D5C63;
+  border: 1px solid #9D5C63;
+  opacity: 0.8;
+  text-decoration: none;
+  padding: 1rem;
+  color: white;
+  background-color: #9D5C63;
 }
 header nav a:hover {
-  color: #27447E;
+  color: #9D5C63;
+  background-color: #FEF5EF;
+  border: 1px solid #9D5C63;
 }
 header h1 {
   display: flex;
@@ -272,7 +281,6 @@ footer {
 html {
   font-size: 62.5%;
   height: 100%;
-  background-color: #FF3241;
 }
 body {
   height: 100%;
@@ -317,6 +325,8 @@ body {
   }
 }
 .bigcontainer .tabs .tabs-item .tabs-item-title {
+  color: #1b2f57;
+  font-weight: 760;
   font-family: 'Open Sans';
 }
 @media (max-width: 500px) {
@@ -328,6 +338,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Open Sans';
+  font-weight: 550;
   font-size: 1.5rem;
 }
 @media (max-width: 500px) {
