@@ -11,7 +11,7 @@
 html {
     font-size: 62.5%;
     height: 100%;
-    background-color: @coralred; //@darkblue;
+    //background-color: @coralred; //@darkblue;
 }
 body {
     height: 100%;
@@ -58,6 +58,8 @@ body {
             }
             
             .tabs-item-title {
+                color: darken(@darkblue, 10%);
+                font-weight: 760;
                 font-family: 'Open Sans';
                 @media @mobile {
                     padding-top: 2rem;
@@ -67,6 +69,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 font-family: 'Open Sans';
+                font-weight: 550;
                 font-size: 1.5rem;
             }
                 @media @mobile {

@@ -130,6 +130,7 @@ header {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+  background-color: none;
 }
 header nav {
   display: flex;
@@ -140,10 +141,18 @@ header nav {
   margin-bottom: 1rem;
 }
 header nav a {
-  color: #9D5C63;
+  border: 1px solid #9D5C63;
+  border-radius: 3px;
+  opacity: 0.6;
+  text-decoration: none;
+  padding: 1rem;
+  color: white;
+  background-color: #9D5C63;
 }
 header nav a:hover {
-  color: #27447E;
+  color: #9D5C63;
+  background-color: #FEF5EF;
+  border: 1px solid #9D5C63;
 }
 header h1 {
   display: flex;
@@ -198,28 +207,32 @@ footer {
 }
 html {
   font-size: 62.5%;
-  background-color: #FF3241;
 }
 body {
   height: 100%;
 }
 .bgimage {
   padding-top: 2.5rem;
-  background-image: url("../assets/bgimg1.png");
+  background-image: url("../assets/bgimg3.png");
   background-position: center;
   background-size: cover;
   height: 100%;
 }
 .bigcontainer {
   margin: 0 auto;
+  border-radius: 10px;
   margin-bottom: 5rem;
   max-width: 1200px;
-  border-radius: 10px;
-  width: 100%;
-  height: auto;
+  width: 90%;
+  height: 100%;
   padding-top: 2rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 3rem;
   background-color: #FEF5EF;
+}
+@media (max-width: 500px) {
+  .bigcontainer {
+    width: 100%;
+  }
 }
 .bigcontainer .headimg {
   margin: 0 auto;
@@ -339,24 +352,24 @@ body {
   align-items: center;
   text-decoration: none;
   border-radius: 50%;
-  border: 1px solid #FF3241;
+  border: 1px solid #27447E;
   font-family: 'Saira', cursive;
-  font-weight: 700;
   color: #FF3241;
+  font-weight: 700;
+  color: #27447E;
   font-size: 1.8rem;
   background-color: #FEF5EF;
 }
 .bigcontainer .container2 a:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   color: white;
-  background-color: #FF3241;
+  background-color: #27447E;
 }
 .bigcontainer .container3 {
   margin: 0rem auto;
   max-width: 1000px;
   width: 100%;
   border-radius: 10px;
-  height: 100%;
   background-color: #D6E3F8;
   padding-bottom: 2.5rem;
 }
